@@ -8,4 +8,9 @@ const edad = parseInt(prompt("Ingrese su edad: "))
 console.log(edad)
 //NaN is not a number
 //si la edad es mayor o igual a 18 sos mayor de edad
-
+if(edad >=18){
+    document.write("La edad ingresada es "+ edad + ", sos mayor de edad")
+} 
+else{
+    document.write("La edad ingresada es "+ edad + ", no sos mayor de edad")
+}
