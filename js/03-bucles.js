@@ -1,10 +1,13 @@
-//bucle while, do-while, for
-//while(condicion logica){
-//todas las lineas de codigo que quiero repetir}
-//agregar una línea que haga que la condicion logica se deje de complir}
+// bucles while, do-while, for
 
-let numero =1;
-while(numero<=10){document.write(`<p> Línea ${numero} 1<p>`)
-    numero=numero+1;
+// while(condicion logica){
+    // todas las lineas de codigo que quiero repetir
+    // agregar una linea que haga que la condicion logica se deje de cumplir
+// }
 
+
+let numero = 1;
+while(numero<=10){
+    document.write(`<p>Linea número ${numero}</p>`)
+    numero =  numero + 1;
 }

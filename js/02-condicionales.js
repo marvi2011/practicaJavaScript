@@ -7,10 +7,15 @@ todas las lineas de codigo si se cumple la condicion logica
 /*const edad = parseInt(prompt("Ingrese su edad: "));
 
 console.log(edad);*/
+/*if (edad>= 18){
+  document.write("La edad ingresada: "+edad+" sos mayor de edad")
+  }
+  else {document.write("La edad ingresada: "+edad+" no sos mayor de edad")}*/
 
 //preguntar si el numero es valido 1-100, NaN
 //NaN is not a number
 //si la edad es mayor o igual a 18 sos mayor de edad
+
 // and &&
 // or || (en la tecla del 1)
 //not !
@@ -28,13 +33,15 @@ console.log(edad);*/
   //menores de 16 no pueden votar*/
 
 const edad = parseInt(prompt("Ingrese su edad: "));
-if (edad >= 18 && edad <= 65) {
-  document.write(`Usted ingresó: ${edad} años, está obligado a votar`);
-} else {
-  //sera que tiene entre 16, 17 o mas de 65
-  if (edad == 16 || edad == 17 || edad > 65) {
-    document.write(`Usted ingresó: ${edad} años, es optativo votar`);
+if (edad >= 1 && edad <= 100) {
+  if (edad >= 18 && edad <= 65) {
+    document.write(`Usted ingresó: ${edad} años, está obligado a votar`);
   } else {
-    document.write(`Usted ungresó: ${edad} años, no puede votar`);
+    //sera que tiene entre 16, 17 o mas de 65
+    if (edad == 16 || edad == 17 || edad > 65) {
+      document.write(`Usted ingresó: ${edad} años, es optativo votar`);
+    } else {
+      document.write(`Usted ungresó: ${edad} años, no puede votar`);
+    }
   }
 }
