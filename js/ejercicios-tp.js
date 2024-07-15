@@ -1,8 +1,14 @@
 //ejercicio 9 del trabajo práctico N° 1
 //1 pedir frase (en este caso le indicamos que sea de 4 caracteres)
-const frase = prompt("Ingrese una frase de 4 caracteres:");
+const frase = prompt("Ingrese una frase de 4 caracteres:").toLowerCase();
+//const frase =promt("Ingrese una frse de 4 caracteres:").toupperecase (directamente guarda la frase en mayusculas)
 //se usa el console.log para verificar que la frase se guarde en la variable
 console.log(frase);
+// ahora ingresamos una funcion que no hace que toda la frase se transforme a minusculos
+console.log(frase.toLowerCase());
+// pasa la frase a mayusculas
+console.log(frase.toUpperCase());
+
 /*LENGHT: cuenta cuantos caracteres tiene la frase
 console.log(frase.lenght)*/
 
