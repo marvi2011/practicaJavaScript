@@ -24,24 +24,79 @@ for (let i = 0; i < series.length; i++) {
 document.write("</ul>");
 
 //agregar un elemento en el array
-series.unshift("vikings", 2024) //al comienzo
+series.unshift("vikings", 2024); //al comienzo
 
 document.write(
-    `<h2>Cantidad de elementos en el array series: ${series.length}</h2>`
-  );
-  document.write("<ul>");
-  for (let i = 0; i < series.length; i++) {
-    document.write(`<li>${series[i]}</li>`);
-  }
-  document.write("</ul>");
+  `<h2>Cantidad de elementos en el array series: ${series.length}</h2>`
+);
+document.write("<ul>");
+for (let i = 0; i < series.length; i++) {
+  document.write(`<li>${series[i]}</li>`);
+}
+document.write("</ul>");
 
-  //agregar elementos al final del array
-  series.push("breaking bad", 300)
-  document.write(
-    `<h2>Cantidad de elementos en el array series: ${series.length}</h2>`
-  );
-  document.write("<ul>");
-  for (let i = 0; i < series.length; i++) {
-    document.write(`<li>${series[i]}</li>`);
-  }
-  document.write("</ul>");
+//agregar elementos al final del array
+series.push("breaking bad", 300);
+document.write(
+  `<h2>Cantidad de elementos en el array series: ${series.length}</h2>`
+);
+document.write("<ul>");
+for (let i = 0; i < series.length; i++) {
+  document.write(`<li>${series[i]}</li>`);
+}
+document.write("</ul>");
+
+//agregamos algo al medio del array splice
+series.splice(3, 0, "avatar");
+document.write(
+  `<h2>Cantidad de elementos en el array series: ${series.length}</h2>`
+);
+document.write("<ul>");
+for (let i = 0; i < series.length; i++) {
+  document.write(`<li>${series[i]}</li>`);
+}
+document.write("</ul>");
+
+//borrar el primer elemento del array
+series.shift();
+document.write(
+  `<h2>Cantidad de elementos en el array series: ${series.length}</h2>`
+);
+document.write("<ul>");
+for (let i = 0; i < series.length; i++) {
+  document.write(`<li>${series[i]}</li>`);
+}
+document.write("</ul>");
+
+//para borrar el ultimo elementos del array
+series.pop();
+document.write(
+  `<h2>Cantidad de elementos en el array series: ${series.length}</h2>`
+);
+document.write("<ul>");
+for (let i = 0; i < series.length; i++) {
+  document.write(`<li>${series[i]}</li>`);
+}
+document.write("</ul>");
+
+//borrar elementos del medio del array
+series.splice(5, 1);
+document.write(
+  `<h2>Cantidad de elementos en el array series: ${series.length}</h2>`
+);
+document.write("<ul>");
+for (let i = 0; i < series.length; i++) {
+  document.write(`<li>${series[i]}</li>`);
+}
+document.write("</ul>");
+
+//modificar elementos del array
+series[3] = "pokemon";
+document.write(
+  `<h2>Cantidad de elementos en el array series: ${series.length}</h2>`
+);
+document.write("<ul>");
+for (let i = 0; i < series.length; i++) {
+  document.write(`<li>${series[i]}</li>`);
+}
+document.write("</ul>");
