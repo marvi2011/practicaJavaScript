@@ -126,5 +126,23 @@ sagaRambo2.map((item, posicion) =>
 );
 document.write("</ol>");
 
+//existe un valor valido en vegadores?
+if (vengadores) {
+  document.write(`<p> Peli buscada: ${vengadores}</p>`);
+} else {
+  document.write(`<p> Peli buscada: no se encontró vengadores</p>`);
+}
+
 //forEach
 series.forEach((item) => console.log("forEach -" + item));
+
+//operador ternario  (condicion logica)? todo lo que quiero si se cumple la condicion: todo lo que quiero hacer si no se cumple la condicion
+vengadores
+  ? document.write(`<p> Peli buscada: encontre la peli</p>`)
+  : document.write(`<p> Peli buscada: no se encontró vengadores</p>`);
+
+document.write(
+  `<p>La peli buscada: ${
+    vengadores ? vengadores : "no  encontro vengadores"
+  }</p>`
+);
